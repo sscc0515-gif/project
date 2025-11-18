@@ -1,0 +1,4 @@
+언어	JSP , Java
+서버	Tomcat 
+데이터베이스 MariaDB
+DB연결 JDBC	

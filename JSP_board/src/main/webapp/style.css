@@ -1,0 +1,176 @@
+/* style.css */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 2px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.pagination a.active {
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 30px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu li.right {
+  margin-left: auto;
+  display: flex;
+  gap: 15px;
+}
+
+.menu a, .menu span {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.menu a:hover {
+  color: #007BFF;
+}
+
+main {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.alert {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 15px;
+  border-radius: 5px;
+  color: #856404;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-box select,
+.search-box input[type="text"],
+.search-box button {
+  padding: 8px;
+  font-size: 14px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #0056b3;
+}
+
+.board-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.board-table th, .board-table td {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.board-table th {
+  background-color: #f7f9fa;
+  font-weight: bold;
+}
+
+.pagination {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.pagination button {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  margin: 0 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background-color: #007BFF;
+  color: white;
+  border-color: #007BFF;
+}
+
+.write-btn {
+  float: right;
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.write-btn:hover {
+  background-color: #218838;
+}
