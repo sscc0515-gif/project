@@ -1,1 +1,0 @@
-Spring Boot + Spring MVC + Thymeleaf + MySQL + JavaScript
