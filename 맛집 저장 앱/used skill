@@ -1,0 +1,4 @@
+앱 개발	Android Studio, Java
+지도	Google Maps SDK
+장소 검색	Google Places API
+데이터 저장	Firebase Firestore(또는 Realtime DB)
