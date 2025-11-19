@@ -1,0 +1,229 @@
+doctype html
+html(lang="ko")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title 고동화 | 이력서 & 포트폴리오
+    style.
+      * { box-sizing:border-box; margin:0; padding:0; font-family:'Segoe UI',sans-serif; }
+      body { background: linear-gradient(180deg,#f5f7fa,#e4e8f0); color:#1f2937; line-height:1.6; }
+
+      header {
+          max-width: 1050px;
+          margin: 0 auto;
+          padding: 20px 40px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background-color: #ffffff;
+          border-bottom: 2px solid #d2c9c9;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+              }
+      .logo { font-size:26px; font-weight:700; color:#000000ff; }
+      nav a {
+          margin-left: 20px;
+          text-decoration: none;
+          color: #444;
+          font-weight: 500;
+          transition: all 0.3s ease;
+              }
+      nav a:hover { color:#0ea5a2; }
+      .container { max-width:1050px; margin:0 auto; padding:20px; }
+      section { margin-top:50px; }
+      h2 {
+        font-size:36px; font-weight:700; margin-bottom:24px; color:#0b1120;
+        border-left:4px solid #0ea5a2; padding-left:12px;
+      }
+      .card {
+        background:#fff; padding:28px; border-radius:16px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.08); margin-bottom:24px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow:0 15px 30px rgba(0,0,0,0.12);
+      }
+      .resume-grid { display:grid; grid-template-columns:2fr 1fr; gap:28px; }
+      .tag {
+        display:inline-block; padding:6px 14px; background:#0ea5a2; color:#fff;
+        border-radius:999px; font-size:13px; margin:4px 4px 0 0;
+        transition: transform 0.2s;
+      }
+      .tag:hover { transform: scale(1.1); }
+      ul li { margin-bottom:8px; }
+      footer {
+        text-align:center; padding:50px; color:#555; margin-top:60px; font-size:15px;
+        border-top:2px solid #ddd;
+      }
+
+      .profile-inline {
+        display:flex;
+        align-items:flex-start;
+        justify-content:space-between;
+        gap:20px;
+      }
+      .profile-info { flex:1; }
+      .profile-info div { margin-bottom:4px; }
+
+      .avatar {
+        width:180px;
+        height:220px;
+        border-radius:12px;
+        overflow:hidden;
+        flex-shrink:0;
+      }
+      .avatar img {
+        width:100%;
+        height:100%;
+        object-fit:cover;
+      }
+      
+
+  body
+    header
+      .logo 나의 포트폴리오 사이트
+      nav
+        a(href="#resume") 이력서
+        a(href="#about") 자기소개
+        a(href="#projects") 프로젝트
+        a(href="#contact") 문의
+
+    .container
+
+      // ---------------- 이력서 ----------------
+      section#resume
+        h2 이력서
+        .card
+          .profile-inline
+            .profile-info
+              h3 개인 사항
+              p(style="color:#555; margin:6px 0 14px")
+                | 이름 : 고동화 / 생년월일 : 2000.05.15
+              p(style="color:#555; margin:6px 0 14px")
+                | 전화번호 : 010-3941-5594 / 이메일 : sscc0505@naver.com
+              p(style="color:#555; margin:6px 0 14px")
+                | 주소 : 경기도 광주시 회안대로 350-12 102동 1101호
+              h3 학력 사항
+              p(style="color:#555; margin:6px 0 14px")
+                | 인하공업전문대학 컴퓨터정보공학과 졸업예정 2026.02.02
+              p(style="color:#555; margin:6px 0 14px")
+                | 성일정보고등학교 졸업 2020.02.01
+
+              h3 자격 사항
+              p(style="color:#555; margin:6px 0 14px")
+                | 정보처리산업기사 2025.09.12
+              p(style="color:#555; margin:6px 0 14px")
+                | SQLD 2024.10.02
+              p(style="color:#555; margin:6px 0 14px")
+                | 운전면허 2종보통 2020.02.03
+
+              h4(style="margin-top:12px") 기술 스택
+              div
+                span.tag HTML/CSS
+                span.tag JavaScript
+                span.tag Node.js
+                span.tag Java
+                span.tag Spring Boot
+                span.tag MySQL
+                span.tag C언어
+                span.tag AI/ML
+
+            .avatar
+              img(src="/images/donghwa.JPG", alt="고동화")
+
+      // ---------------- 자기소개 ----------------
+      
+
+      
+      section#about
+        h2 자기소개
+        .card
+          h3 성장 과정 
+          p
+            | 저는 어릴 때부터 컴퓨터와 기술에 관심이 많아 자연스럽게 프로그래밍과 웹 개발에 흥미를 가지게 되었습니다.
+            | 학부 과정 동안 다양한 프로젝트와 팀 활동을 통해 협업 능력과 문제 해결 능력을 키웠습니다.
+            | 특히 지도 기반 앱과 웹 애플리케이션 개발 경험을 통해 실제 사용자 관점에서 UI/UX를 설계하는 능력을 배웠습니다.
+            | 또한, 다양한 언어와 프레임워크를 학습하면서 기술 스택을 넓혔고, 문제 해결을 위한 알고리즘과 최적화 경험도 쌓았습니다.
+            | 이러한 경험을 통해 저는 단순히 코드를 작성하는 개발자가 아닌, 사용자 중심의 서비스를 기획하고 구현할 수 있는 개발자로 성장할 수 있었습니다.
+
+          h3 성격 및 강점
+          p
+            | 저는 책임감 있고 성실하며, 문제를 분석하고 해결하는 것을 즐깁니다.
+            | node.js, Spring boot 등 기술적 강점을 가지고 있습니다.
+            | 또한, 팀원과의 원활한 소통을 중요시하며, 프로젝트를 완성도 높게 마무리하기 위해 항상 계획적으로 작업합니다.
+            | 새로운 기술을 배우고 적용하는 것에 열정적이며, 사용자 경험을 최우선으로 생각하는 개발 태도를 가지고 있습니다.
+
+          h3 지원 동기 및 포부
+          p
+            | 귀사에 지원한 이유는 사용자 경험 중심의 웹 개발 역량을 발휘하고,
+            | 실무 경험을 통해 성장할 수 있는 기회를 얻기 위함입니다.
+            | 앞으로 최신 기술을 적극적으로 학습하며, 팀과 함께 의미 있는 서비스를 만들어 나가는 개발자가 되고자 합니다.
+            | 장기적으로는 기술과 UX를 연결하여 사람들에게 가치 있는 서비스를 제공하는 풀스택 개발자로 성장하고 싶습니다.
+
+
+      // ---------------- 프로젝트 ----------------
+      section#projects
+        h2 프로젝트
+        
+        .card
+           h3 구단 관리 프로그램                     
+                span.tag Java Swing
+                span.tag Netbeans 
+                span.tag Oracle DB
+                span.tag JDK
+           p
+            | Java Swing과 JCalendar를 활용한 팀 관리 프로그램입니다.
+            | 선수 등록, 일정 관리, 의료 기록 관리 등 구단 운영에 필요한 기능을 통합하여 개발하였고,
+            | 캘린더 기반 일정 확인과 GUI를 통한 데이터 관리가 용이하도록 설계했습니다.
+            | 개인 프로젝트로 진행하며 Java 기반 GUI 설계와 데이터 구조 관리 경험을 쌓았습니다.
+
+        .card
+          h3 맛집 저장 앱   
+                span.tag Android Studio  
+                span.tag Firebase
+                span.tag Java
+                span.tag Google Maps API
+          p
+            | Google Maps API와 Firebase를 활용한 지도 기반 맛집 저장 앱입니다.
+            | 사용자는 주변 맛집을 지도에서 확인하고 즐겨찾기에 추가하거나 메모를 남길 수 있습니다.
+            | Firebase Authentication을 통한 로그인 기능과 데이터 실시간 동기화 기능을 구현하였으며,
+            | React Native를 기반으로 모바일 환경에서도 원활하게 작동하도록 개발했습니다.
+
+        .card
+          h3 도서 쇼핑몰 웹사이트   
+                span.tag Spring Boot 
+                span.tag MySQL
+                span.tag JavaScript
+                span.tag Thymeleaf
+                span.tag Java
+
+          p
+            | Spring Boot와 Thymeleaf 기반 웹 애플리케이션으로, 장바구니 기능과 도서 정보 수정, PUT 요청 처리 등을 구현했습니다.
+            | 사용자는 도서를 검색하고 장바구니에 담아 주문할 수 있으며,
+            | 관리자 페이지를 통해 도서 등록 및 수정을 관리할 수 있도록 설계했습니다.
+            | 프로젝트를 통해 서버-클라이언트 연동과 MVC 패턴 구현 경험을 쌓았습니다.
+
+        .card
+          h3 JSP 게시판   
+                span.tag JSP
+                span.tag Tomcat
+                span.tag Maria DB
+          p
+            | JSP와 Spring Boot를 활용한 게시판 웹 애플리케이션입니다.
+            | CRUD 기능 구현, 게시글 검색, 페이징 처리 등 기본적인 웹 서비스 기능을 구현하였습니다.
+            | 사용자 친화적인 UI/UX를 고려하여 글 작성과 조회, 수정, 삭제가 직관적으로 가능하도록 설계했습니다.
+            | 웹 개발 전반적인 흐름과 세션/인증 처리 경험을 얻을 수 있었습니다.
+                  
+        .card 
+          h3  깃허브 주소 
+          a(href="https://github.com/sscc0515-gif/project") github.com/sscc0515-gif/project
+      // ---------------- 문의 ----------------
+      section#contact
+        h2 문의
+        .card
+          p 전화번호: 010-3941-5594
+          p 이메일: sscc0505@naver.com
+          p 깃허브: github.com/sscc0515-gif/project
+
+      footer
+        | © 2025 고동화 — Portfolio
