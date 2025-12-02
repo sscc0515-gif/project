@@ -1,1 +1,1 @@
-Spring Boot + Spring MVC + Thymeleaf + MySQL + JavaScript
+Spring Boot + Spring MVC + Thymeleaf + MySQL + JavaScript + RESTful API
